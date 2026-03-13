@@ -1,0 +1,63 @@
+body {
+    border: 1px solid silver;
+    background-color: black;
+}
+
+header {
+    border: 1px solid orange;
+    background-color: red;
+}
+
+.logo {
+    border: 1px solid black;
+    background-color: green;
+}
+
+h1 {
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+nav {
+    border: 1px solid cyan;
+    background-color: blue;
+}
+
+nav ul {
+    border: 1px solid black;
+    background-color: green;
+}
+
+nav ul li {
+    border: 1px solid orange;
+    background-color: yellow;
+}
+
+nav ul li a {
+    border: 1px solid blue;
+    background-color: cyan;
+}
+
+main {
+    border: 1px solid greenyellow;
+    background-color: green;
+}
+
+main > section {
+    border: 1px solid cyan;
+    background-color: blue;
+}
+
+#property-overview {
+    background-image: none;
+}
+
+#unit-details .unit{
+    border: 1px solid yellow;
+    background-color: red;
+}
+
+footer {
+    border: 1px solid cyan;
+    background-color: blue;
+}
