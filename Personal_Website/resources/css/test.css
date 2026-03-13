@@ -1,0 +1,12 @@
+body {
+    min-height: 100vh;            /* allow container to grow with content */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+main {
+    min-height: 200vh;
+}

@@ -1,0 +1,15 @@
+.fortune-teller {
+    margin: 20px auto;
+    display: block;
+}
+
+button.fortune-teller {
+    cursor: pointer;
+}
+
+textarea.fortune-teller {
+    display: none;
+    resize: none;
+    field-sizing: content;
+    cursor: default;
+}

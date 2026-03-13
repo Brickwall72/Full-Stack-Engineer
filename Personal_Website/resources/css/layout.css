@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-width: 320px;
+    /* centre column fills container up to 1440px; outer columns collapse on narrow screens */
+    grid-template: "header header header" auto
+                    ".      main   ." 1fr
+                   "footer footer footer" auto /
+                   1fr min(100%,1440px) 1fr;
+    --header-height: 8rem;  /* actual height: 2rem padding + 100px logo + 2rem padding */
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    display: inline-flex;
+    min-height: 6rem;
+    padding: 1rem 0;
+}
+
+h1 {
+    grid-area: title;
+    justify-self: left;
+    align-self: center;
+    text-align: center;
+}
+
+nav {
+    width: 20rem;
+    align-content: center;
+    
+}
+
+nav ul {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+main {
+    grid-area: main;
+    width: 100%;                  /* stretch to fill its grid cell */
+    max-width: 1440px;            /* never wider than desired content width */
+    padding: 10px 5%;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+main ul {
+    padding: 10px 5%;
+}
+
+@media only screen and (max-width: 1023px) {
+    header {
+        border-bottom: 1px solid black;
+        justify-content: center;
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    header {
+        position: fixed;
+        min-height: 8rem;
+        padding: 2rem 0;
+    }
+    
+    header .logo {
+        justify-self: left;
+        margin-left: 20px;
+    }
+
+    nav {
+        margin-left: 10px;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    main {
+        margin: var(--header-height) auto 0;  /* margin-top uses variable for header height */
+    }
+
+}
+
+
+footer {
+    grid-area: footer;
+    min-height: 4rem;
+    padding: 2rem;
+    text-align: center;
+}

@@ -1,27 +1,27 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: Helvetica, Arial, sans-serif;
     width: 100%;
-    position: relative;
-    background-image: url("../40187-abstract-pattern-blue-texture.jpg");
+    background-color: black;
+    max-width: 1440px;
+    min-width: 320px;
+    justify-items: center;
+    display: grid;
+    grid-template: "header" auto
+                   "main" 1fr
+                   "footer" auto / 100%;
 }
 
 header {
-    height: 80px;
+    grid-area: header;
     width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
+    position: sticky;
     background-color: lightslategray;
     color: azure;
     z-index: 100;
 }
 
 .nav-item{
-    display: inline-block;
+    display: inline-flex;
     padding: 10px 10px;
     color: azure;
 }
@@ -36,12 +36,15 @@ header a{
 
 
 main {
+    grid-area: main;
     position: relative;
     color: white;
     top: 60px;
+    background-image: url("../40187-abstract-pattern-blue-texture.jpg");
 }
 
 footer {
+    grid-area: footer;
     position: fixed;
     bottom: 0;
     left: 0;
