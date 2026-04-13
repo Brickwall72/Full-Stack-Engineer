@@ -1,0 +1,23 @@
+.SearchBar{
+    margin-top: 40px;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-self: center;
+    /* border: 1px solid white; */
+}
+
+input{
+    background-color: white;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input:focus {
+    outline: none;
+}
+
+button{
+    align-self: center;
+    width: fit-content;
+}

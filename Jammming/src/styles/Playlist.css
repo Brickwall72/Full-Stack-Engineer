@@ -1,0 +1,27 @@
+#playlist {
+    border: 1px solid white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#playlist-name {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    outline: none;
+    font-weight: bold;
+    padding: 4px;
+}
+
+#playlist-name:focus {
+    outline: none;
+}
+
+#save-playlist {
+    border: 1px solid white;
+    width:fit-content;
+    margin-bottom: 10px;
+}

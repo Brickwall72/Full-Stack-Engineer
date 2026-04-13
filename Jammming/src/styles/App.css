@@ -1,0 +1,16 @@
+#results-playlist {
+    margin-top: 30px;
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+#search-results {
+    width: 45%;
+}
+
+#playlist {
+    width: 45%;
+}
