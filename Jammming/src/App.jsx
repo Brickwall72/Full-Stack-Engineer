@@ -46,21 +46,23 @@ function App(){
     return (
         <div>
             <Header />
-            <SearchBar />
-            <div id="results-playlist">
-                <SearchResults 
-                    id="search-results" 
-                    results={searchResults} 
-                    handleAdd={handleAddSong} 
-                />
-                <Playlist 
-                    id="playlist" 
-                    name={playlistName} 
-                    handleNameChange={handleNameChange} 
-                    playlist={playlist} handleRemove={handleRemoveSong} 
-                    handleSave={handleSavePlaylist} 
-                />
-            </div>
+            <main>
+                <SearchBar />
+                <div id="results-playlist">
+                    <SearchResults 
+                        id="search-results" 
+                        results={searchResults} 
+                        handleAdd={handleAddSong} 
+                    />
+                    <Playlist 
+                        id="playlist" 
+                        name={playlistName} 
+                        handleNameChange={handleNameChange} 
+                        playlist={playlist} handleRemove={handleRemoveSong} 
+                        handleSave={handleSavePlaylist} 
+                    />
+                </div>
+            </main>
         </div>
     );
 }
